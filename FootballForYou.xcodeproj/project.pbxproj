@@ -13,6 +13,7 @@
 		959155F71EB7E9000017B83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959155F61EB7E9000017B83E /* Assets.xcassets */; };
 		959155FA1EB7E9000017B83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959155F81EB7E9000017B83E /* LaunchScreen.storyboard */; };
 		959156021EB7EA450017B83E /* Ristella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 959156011EB7EA450017B83E /* Ristella.ttf */; };
+		959156091EB7EBDD0017B83E /* Richardson Brand United.otf in Resources */ = {isa = PBXBuildFile; fileRef = 959156081EB7EBDD0017B83E /* Richardson Brand United.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		959155F91EB7E9000017B83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		959155FB1EB7E9000017B83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959156011EB7EA450017B83E /* Ristella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ristella.ttf; sourceTree = "<group>"; };
+		959156081EB7EBDD0017B83E /* Richardson Brand United.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Richardson Brand United.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		959156031EB7EA4A0017B83E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				959156081EB7EBDD0017B83E /* Richardson Brand United.otf */,
 				959155F61EB7E9000017B83E /* Assets.xcassets */,
 				959156011EB7EA450017B83E /* Ristella.ttf */,
 				959155FB1EB7E9000017B83E /* Info.plist */,
@@ -166,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959156091EB7EBDD0017B83E /* Richardson Brand United.otf in Resources */,
 				959156021EB7EA450017B83E /* Ristella.ttf in Resources */,
 				959155FA1EB7E9000017B83E /* LaunchScreen.storyboard in Resources */,
 				959155F71EB7E9000017B83E /* Assets.xcassets in Resources */,
