@@ -12,6 +12,7 @@
 		959155F51EB7E9000017B83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959155F31EB7E9000017B83E /* Main.storyboard */; };
 		959155F71EB7E9000017B83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959155F61EB7E9000017B83E /* Assets.xcassets */; };
 		959155FA1EB7E9000017B83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959155F81EB7E9000017B83E /* LaunchScreen.storyboard */; };
+		959156021EB7EA450017B83E /* Ristella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 959156011EB7EA450017B83E /* Ristella.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		959155F61EB7E9000017B83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959155F91EB7E9000017B83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		959155FB1EB7E9000017B83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959156011EB7EA450017B83E /* Ristella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ristella.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		959155EE1EB7E9000017B83E /* FootballForYou */ = {
 			isa = PBXGroup;
 			children = (
-				959155EF1EB7E9000017B83E /* AppDelegate.swift */,
-				959155F11EB7E9000017B83E /* ViewController.swift */,
-				959155F31EB7E9000017B83E /* Main.storyboard */,
-				959155F61EB7E9000017B83E /* Assets.xcassets */,
-				959155F81EB7E9000017B83E /* LaunchScreen.storyboard */,
-				959155FB1EB7E9000017B83E /* Info.plist */,
+				959156071EB7EA6C0017B83E /* Model */,
+				959156061EB7EA650017B83E /* View */,
+				959156051EB7EA5E0017B83E /* Controller */,
+				959156041EB7EA540017B83E /* Utilities */,
+				959156031EB7EA4A0017B83E /* Resources */,
 			);
 			path = FootballForYou;
+			sourceTree = "<group>";
+		};
+		959156031EB7EA4A0017B83E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				959155F61EB7E9000017B83E /* Assets.xcassets */,
+				959156011EB7EA450017B83E /* Ristella.ttf */,
+				959155FB1EB7E9000017B83E /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		959156041EB7EA540017B83E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		959156051EB7EA5E0017B83E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				959155EF1EB7E9000017B83E /* AppDelegate.swift */,
+				959155F11EB7E9000017B83E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		959156061EB7EA650017B83E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959155F31EB7E9000017B83E /* Main.storyboard */,
+				959155F81EB7E9000017B83E /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		959156071EB7EA6C0017B83E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959156021EB7EA450017B83E /* Ristella.ttf in Resources */,
 				959155FA1EB7E9000017B83E /* LaunchScreen.storyboard in Resources */,
 				959155F71EB7E9000017B83E /* Assets.xcassets in Resources */,
 				959155F51EB7E9000017B83E /* Main.storyboard in Resources */,
