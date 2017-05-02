@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D15F1A97A3D9E7BCD3005815460FC5A44AFBEA72",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D15F1A97A3D9E7BCD3005815460FC5A44AFBEA72" : 9223372036854775807,
+    "C38149C90DB734435B96A2370865D4F19BC6C181" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "33FE86C3-78CA-4C23-BCAD-1BF728247448",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D15F1A97A3D9E7BCD3005815460FC5A44AFBEA72" : "FootballForYou\/",
+    "C38149C90DB734435B96A2370865D4F19BC6C181" : "PokeDex\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FootballForYou",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FootballForYou.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KhaledElfakharany\/PokeDexApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C38149C90DB734435B96A2370865D4F19BC6C181"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:KhaledElfakharany\/FootballForYou.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D15F1A97A3D9E7BCD3005815460FC5A44AFBEA72"
+    }
+  ]
+}
