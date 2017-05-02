@@ -55,13 +55,24 @@ class Screen1: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return competitions.count
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let competition = competitions[indexPath.row]
+        performSegue(withIdentifier: "segue1", sender: competition)
+    }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 140 , height: 140)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue1" {
+            if let destination = segue.destination as? Screen2 {
+                if let sent = sender as? Competitions {
+                    destination.competitionId = sent.id
+                }
+            }
+        }
     }
 
 

@@ -105,9 +105,9 @@
                             <constraint firstItem="yqw-pU-bvc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Oa-EE-icJ"/>
                             <constraint firstItem="yqw-pU-bvc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="59p-aS-DLa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="y0N-dn-frt" secondAttribute="trailing" constant="10" id="DuB-XT-HHN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y0N-dn-frt" secondAttribute="bottom" constant="10" id="NKw-B9-LCf"/>
                             <constraint firstItem="mbD-3I-2Xg" firstAttribute="top" secondItem="yqw-pU-bvc" secondAttribute="bottom" constant="40" id="RMF-rJ-0R3"/>
                             <constraint firstItem="y0N-dn-frt" firstAttribute="top" secondItem="yqw-pU-bvc" secondAttribute="bottom" constant="100" id="TB9-6Q-KKY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y0N-dn-frt" secondAttribute="bottom" constant="10" id="YAx-jV-iBv"/>
                             <constraint firstItem="mbD-3I-2Xg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="f7c-Yf-gZf"/>
                             <constraint firstItem="y0N-dn-frt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="qvf-aD-d9m"/>
                             <constraint firstAttribute="trailing" secondItem="yqw-pU-bvc" secondAttribute="trailing" id="zxB-xR-0yX"/>
@@ -115,14 +115,95 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="y0N-dn-frt" id="EKo-8X-moJ"/>
+                        <segue destination="Z1B-jN-fEf" kind="show" identifier="segue1" id="Yfq-sF-Zl4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16.800000000000001" y="64.31784107946028"/>
+            <point key="canvasLocation" x="23" y="63"/>
+        </scene>
+        <!--Screen2-->
+        <scene sceneID="1XJ-Gp-xGf">
+            <objects>
+                <viewController id="Z1B-jN-fEf" customClass="Screen2" customModule="FootballForYou" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fTT-ze-jfp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4nM-N7-MHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tL4-gw-z7G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-bS-vqb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91U-Bw-hCI">
+                                        <rect key="frame" x="78" y="27.5" width="220" height="27.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="xOP-ZN-ryu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RichardsonBrandUnited" family="Richardson Brand United" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-JI-vMg">
+                                        <rect key="frame" x="5" y="20" width="60" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="3Xd-d2-KFh"/>
+                                            <constraint firstAttribute="width" constant="60" id="Z6P-Yz-Tut"/>
+                                        </constraints>
+                                        <state key="normal" title="Back" image="back"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="Z1B-jN-fEf" eventType="touchUpInside" id="x0u-up-2FK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.67888069149999997" blue="0.4612324834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="91U-Bw-hCI" secondAttribute="bottom" constant="5" id="2Jc-dY-e4Z"/>
+                                    <constraint firstItem="91U-Bw-hCI" firstAttribute="centerX" secondItem="NWk-bS-vqb" secondAttribute="centerX" id="7tU-w1-5Nz"/>
+                                    <constraint firstAttribute="height" constant="60" id="8GF-kd-hFy"/>
+                                    <constraint firstAttribute="bottom" secondItem="JDe-JI-vMg" secondAttribute="bottom" constant="5" id="CEy-2s-9D3"/>
+                                    <constraint firstItem="JDe-JI-vMg" firstAttribute="leading" secondItem="NWk-bS-vqb" secondAttribute="leading" constant="5" id="ble-gL-OJE"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jj4-hK-fJk">
+                                <rect key="frame" x="16" y="68" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hZe-SY-4oS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YIb-Fe-lAL">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031011039391160011" green="0.1205601766705513" blue="0.17880058288574219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NWk-bS-vqb" firstAttribute="leading" secondItem="tL4-gw-z7G" secondAttribute="leading" id="Fht-SG-oim"/>
+                            <constraint firstAttribute="trailing" secondItem="NWk-bS-vqb" secondAttribute="trailing" id="Gwk-8o-v4V"/>
+                            <constraint firstItem="NWk-bS-vqb" firstAttribute="top" secondItem="tL4-gw-z7G" secondAttribute="top" id="tTe-b8-orm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ui-c3-1em" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="62.518740629685162"/>
         </scene>
     </scenes>
     <resources>
         <image name="La Liga" width="3268" height="1131"/>
+        <image name="back" width="256" height="256"/>
     </resources>
 </document>

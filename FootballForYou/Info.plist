@@ -39,5 +39,10 @@
 		<string>Ristella.ttf</string>
 		<string>Richardson Brand United.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

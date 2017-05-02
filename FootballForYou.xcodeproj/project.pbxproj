@@ -12,6 +12,8 @@
 		95633F4B1EB7F7E1003B3FF2 /* PremierTeams.csv in Resources */ = {isa = PBXBuildFile; fileRef = 95633F491EB7F7E1003B3FF2 /* PremierTeams.csv */; };
 		95633F4D1EB7F7FF003B3FF2 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F4C1EB7F7FF003B3FF2 /* csv.swift */; };
 		95633F4F1EB80189003B3FF2 /* shadedViewForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */; };
+		95633F511EB80E60003B3FF2 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F501EB80E60003B3FF2 /* Screen2.swift */; };
+		95633F541EB81234003B3FF2 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F531EB81234003B3FF2 /* Teams.swift */; };
 		959155F01EB7E9000017B83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959155EF1EB7E9000017B83E /* AppDelegate.swift */; };
 		959155F21EB7E9000017B83E /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959155F11EB7E9000017B83E /* Screen1.swift */; };
 		959155F51EB7E9000017B83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959155F31EB7E9000017B83E /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		95633F491EB7F7E1003B3FF2 /* PremierTeams.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PremierTeams.csv; path = "../../../AbdoApps/Football for you/PremierTeams.csv"; sourceTree = "<group>"; };
 		95633F4C1EB7F7FF003B3FF2 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = ../../PokeDex/PokeDex/csv.swift; sourceTree = "<group>"; };
 		95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadedViewForCollectionView.swift; sourceTree = "<group>"; };
+		95633F501EB80E60003B3FF2 /* Screen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		95633F531EB81234003B3FF2 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		959155EC1EB7E9000017B83E /* FootballForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959155EF1EB7E9000017B83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959155F11EB7E9000017B83E /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 				8CB70DC46D6243AB2A345670 /* Pods-FootballForYou.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		959155E31EB7E9000017B83E = {
@@ -82,7 +87,6 @@
 			children = (
 				959155EE1EB7E9000017B83E /* FootballForYou */,
 				959155ED1EB7E9000017B83E /* Products */,
-				93AFF983ADB8E33287445284 /* Pods */,
 				47EE8B9B2934076A9CFFEA64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 				95633F491EB7F7E1003B3FF2 /* PremierTeams.csv */,
 				959156081EB7EBDD0017B83E /* Richardson Brand United.otf */,
 				959155F61EB7E9000017B83E /* Assets.xcassets */,
+				93AFF983ADB8E33287445284 /* Pods */,
 				959156011EB7EA450017B83E /* Ristella.ttf */,
 				959155FB1EB7E9000017B83E /* Info.plist */,
 			);
@@ -133,6 +138,7 @@
 			children = (
 				959155EF1EB7E9000017B83E /* AppDelegate.swift */,
 				959155F11EB7E9000017B83E /* Screen1.swift */,
+				95633F501EB80E60003B3FF2 /* Screen2.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				9591560C1EB7EF500017B83E /* Competitions.swift */,
+				95633F531EB81234003B3FF2 /* Teams.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95633F541EB81234003B3FF2 /* Teams.swift in Sources */,
 				959155F21EB7E9000017B83E /* Screen1.swift in Sources */,
 				959155F01EB7E9000017B83E /* AppDelegate.swift in Sources */,
 				9591560B1EB7EE390017B83E /* Screen1CollectionView.swift in Sources */,
+				95633F511EB80E60003B3FF2 /* Screen2.swift in Sources */,
 				9591560D1EB7EF500017B83E /* Competitions.swift in Sources */,
 				95633F4F1EB80189003B3FF2 /* shadedViewForCollectionView.swift in Sources */,
 				95633F4D1EB7F7FF003B3FF2 /* csv.swift in Sources */,
