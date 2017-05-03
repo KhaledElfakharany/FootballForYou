@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftGifOrigin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>44112728F45C6F1E11EB1AD3045B1D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5A974B29984457FFF3041B7095FEF0F</key>
+		<key>E9F9AA94CD5570A5DC1CC06D4A791CBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

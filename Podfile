@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'FootballForYou' do
     pod 'Alamofire', '~> 4.4'
+    pod 'SwiftGifOrigin', '~> 1.6.1'
 end
