@@ -35,18 +35,7 @@ class Screen2CollectionView: UICollectionViewCell {
 //        }
         
         
-//        let path = Bundle.main.path(forResource: "arsenal-1", ofType: "gif")
-//        let jeremyGif = UIImage.gif(data: path)
-//        let jeremyGif = UIImage.animatedImage(with: [#imageLiteral(resourceName: "arsenal")], duration: 1)
-//        teamLogo.image = jeremyGif
-//        teamName.text = team.name
-
-        
-//        let jeremyGif = UIImage.gifImageWithName("arsenal")
-//        teamLogo.image = jeremyGif
-//        teamName.text = team.name
-        
-        let image = UIImage.gif(name: "giphy")
+        let image = UIImage(named: team.name)
         teamLogo.image = image
         teamName.text = team.name
         

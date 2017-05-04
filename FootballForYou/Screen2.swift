@@ -14,17 +14,26 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
     var competitionId : Int!
     var teams = [Teams]()
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var teamsCollectionView: UICollectionView!
+    @IBOutlet weak var segments: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        teamsCollectionView.delegate = self
+        teamsCollectionView.dataSource = self
         
         downloadTeams {
-            self.collectionView.reloadData()
+            self.teamsCollectionView.reloadData()
             print("7amada")
         }
+        
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        teamsCollectionView.isHidden = true
+    }
+    
+    
     
     func downloadTeams(completed: @escaping ()->() ){
         let path = "http://api.football-data.org/v1/competitions/\(competitionId!)/teams"
@@ -33,27 +42,13 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
             if let dict = result.value as? Dictionary<String,AnyObject> {
                 if let teams = dict["teams"] as? [Dictionary<String,AnyObject>] {
                     for team in teams {
-                        if let name = team["name"] as? String {
-                            if let url = team["crestUrl"] as? String {
-                                if let link = team["_links"] as? Dictionary<String,AnyObject>{
-                                    if let fixtures = link["fixtures"] as? Dictionary<String,AnyObject>{
-                                        if let href1 = fixtures["href"] as? String{
-                                            if let players = link["players"] as? Dictionary<String,AnyObject>{
-                                                if let href2 = players["href"] as? String{
-                                                    let team = Teams(name: name, URL: url, playersURL : href2, fixturesURL : href1)
-                                                    self.teams.append(team)
-                                                }
-                                            }
-                                        }
-                                    }
-                                    
-                                }
-                            }
-                        }
+                        let team = Teams(team: team)
+                        self.teams.append(team)
+                        print(team.name)
                     }
                 }
-                completed()
             }
+            completed()
         }
     }
     
@@ -75,6 +70,17 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
         return CGSize(width: 105, height: 125)
     }
     
+    @IBAction func segmentChange(_ sender: Any) {
+        if segments.selectedSegmentIndex == 0 {
+            teamsCollectionView.isHidden = true
+        }else if segments.selectedSegmentIndex == 1{
+            teamsCollectionView.isHidden = true
+        }else if segments.selectedSegmentIndex == 2{
+            teamsCollectionView.isHidden = false
+        }
+        else{
+        }
+    }
     
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -44,10 +44,25 @@ class Teams {
     
     
     
-    init(name: String, URL : String , playersURL : String , fixturesURL : String) {
-        _name = name
-        _logoURL = URL
-        _playersURL = playersURL
-        _fixturesURL = fixturesURL
+    init(team : Dictionary<String,AnyObject>) {
+        
+
+                if let name = team["name"] as? String {
+                        if let link = team["_links"] as? Dictionary<String,AnyObject>{
+                            if let fixtures = link["fixtures"] as? Dictionary<String,AnyObject>{
+                                if let href1 = fixtures["href"] as? String{
+                                    if let players = link["players"] as? Dictionary<String,AnyObject>{
+                                        if let href2 = players["href"] as? String{
+                                            _name = name
+                                            _playersURL = href2
+                                            _fixturesURL = href1
+                                            
+                                        }
+                                    }
+                                }
+                            }                            
+                        }
+                }
+
     }
 }
