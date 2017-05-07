@@ -16,25 +16,6 @@ class Screen2CollectionView: UICollectionViewCell {
     
     func updateUI(team : Teams) {
         
-        
-        
-        
-//        if let url = URL(string: team.logoURL) {
-//
-//            DispatchQueue.global().async {
-//                do {
-//                    let data = try Data(contentsOf: url)
-//                    DispatchQueue.global().sync {
-//                        self.teamLogo.image = UIImage(data: data)
-//                    }
-//                } catch  {
-//                    //handle the error
-//                }
-//            }
-//            
-//        }
-        
-        
         let image = UIImage(named: team.name)
         teamLogo.image = image
         teamName.text = team.name

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		50C15F0D1BB3C71E1546DB9D /* Pods_FootballForYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400449BF262C38C16817609 /* Pods_FootballForYou.framework */; };
-		9508154D1EB8E3180045E32F /* CustomizedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508154C1EB8E3180045E32F /* CustomizedImageView.swift */; };
 		9508157B1EBAAB7E0045E32F /* AFC Bournemouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 950815671EBAAB7E0045E32F /* AFC Bournemouth.png */; };
 		9508157C1EBAAB7E0045E32F /* Arsenal FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 950815681EBAAB7E0045E32F /* Arsenal FC.png */; };
 		9508157D1EBAAB7E0045E32F /* Burnley FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 950815691EBAAB7E0045E32F /* Burnley FC.png */; };
@@ -29,12 +28,15 @@
 		9508158D1EBAAB7E0045E32F /* West Bromwich Albion FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 950815791EBAAB7E0045E32F /* West Bromwich Albion FC.png */; };
 		9508158E1EBAAB7E0045E32F /* West Ham United FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 9508157A1EBAAB7E0045E32F /* West Ham United FC.png */; };
 		950815901EBAACCA0045E32F /* Liverpool FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 9508158F1EBAACCA0045E32F /* Liverpool FC.png */; };
+		951ECA301EBE01AC00C97E1D /* Screen2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951ECA2F1EBE01AC00C97E1D /* Screen2TableViewCell.swift */; };
 		95633F4A1EB7F7E1003B3FF2 /* Competitions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 95633F481EB7F7E1003B3FF2 /* Competitions.csv */; };
 		95633F4D1EB7F7FF003B3FF2 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F4C1EB7F7FF003B3FF2 /* csv.swift */; };
 		95633F4F1EB80189003B3FF2 /* shadedViewForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */; };
 		95633F511EB80E60003B3FF2 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F501EB80E60003B3FF2 /* Screen2.swift */; };
 		95633F541EB81234003B3FF2 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F531EB81234003B3FF2 /* Teams.swift */; };
 		95633F561EB8232B003B3FF2 /* Screen2CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95633F551EB8232B003B3FF2 /* Screen2CollectionView.swift */; };
+		958D505C1EBFA11900BEAC41 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D505B1EBFA11900BEAC41 /* FixturesTableViewCell.swift */; };
+		958D505E1EBFA30000BEAC41 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958D505D1EBFA30000BEAC41 /* Fixtures.swift */; };
 		959155F01EB7E9000017B83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959155EF1EB7E9000017B83E /* AppDelegate.swift */; };
 		959155F21EB7E9000017B83E /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959155F11EB7E9000017B83E /* Screen1.swift */; };
 		959155F51EB7E9000017B83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959155F31EB7E9000017B83E /* Main.storyboard */; };
@@ -45,13 +47,11 @@
 		9591560B1EB7EE390017B83E /* Screen1CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591560A1EB7EE390017B83E /* Screen1CollectionView.swift */; };
 		9591560D1EB7EF500017B83E /* Competitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591560C1EB7EF500017B83E /* Competitions.swift */; };
 		9591560F1EB7EF6D0017B83E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9591560E1EB7EF6D0017B83E /* Alamofire.framework */; };
-		95CE72A21EB8E0F300B00BB3 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE72A11EB8E0F300B00BB3 /* iOSDevCenters+GIF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03E9D0F94B27366A99451318 /* Pods-FootballForYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballForYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootballForYou/Pods-FootballForYou.release.xcconfig"; sourceTree = "<group>"; };
 		6400449BF262C38C16817609 /* Pods_FootballForYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballForYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9508154C1EB8E3180045E32F /* CustomizedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedImageView.swift; sourceTree = "<group>"; };
 		950815671EBAAB7E0045E32F /* AFC Bournemouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AFC Bournemouth.png"; path = "../../Premier League/AFC Bournemouth.png"; sourceTree = "<group>"; };
 		950815681EBAAB7E0045E32F /* Arsenal FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Arsenal FC.png"; path = "../../Premier League/Arsenal FC.png"; sourceTree = "<group>"; };
 		950815691EBAAB7E0045E32F /* Burnley FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Burnley FC.png"; path = "../../Premier League/Burnley FC.png"; sourceTree = "<group>"; };
@@ -72,12 +72,15 @@
 		950815791EBAAB7E0045E32F /* West Bromwich Albion FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "West Bromwich Albion FC.png"; path = "../../Premier League/West Bromwich Albion FC.png"; sourceTree = "<group>"; };
 		9508157A1EBAAB7E0045E32F /* West Ham United FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "West Ham United FC.png"; path = "../../Premier League/West Ham United FC.png"; sourceTree = "<group>"; };
 		9508158F1EBAACCA0045E32F /* Liverpool FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Liverpool FC.png"; path = "../../Premier League/Liverpool FC.png"; sourceTree = "<group>"; };
+		951ECA2F1EBE01AC00C97E1D /* Screen2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2TableViewCell.swift; sourceTree = "<group>"; };
 		95633F481EB7F7E1003B3FF2 /* Competitions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Competitions.csv; path = "../../../AbdoApps/Football for you/Competitions.csv"; sourceTree = "<group>"; };
 		95633F4C1EB7F7FF003B3FF2 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = ../../PokeDex/PokeDex/csv.swift; sourceTree = "<group>"; };
 		95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadedViewForCollectionView.swift; sourceTree = "<group>"; };
 		95633F501EB80E60003B3FF2 /* Screen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
 		95633F531EB81234003B3FF2 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		95633F551EB8232B003B3FF2 /* Screen2CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2CollectionView.swift; sourceTree = "<group>"; };
+		958D505B1EBFA11900BEAC41 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesTableViewCell.swift; sourceTree = "<group>"; };
+		958D505D1EBFA30000BEAC41 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		959155EC1EB7E9000017B83E /* FootballForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959155EF1EB7E9000017B83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959155F11EB7E9000017B83E /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
@@ -90,7 +93,6 @@
 		9591560A1EB7EE390017B83E /* Screen1CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen1CollectionView.swift; sourceTree = "<group>"; };
 		9591560C1EB7EF500017B83E /* Competitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competitions.swift; sourceTree = "<group>"; };
 		9591560E1EB7EF6D0017B83E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FootballForYou-ccmufrtlxbekwsevfujaegtahmyn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		95CE72A11EB8E0F300B00BB3 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		A20C55FAA33C215152E2B331 /* Pods-FootballForYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballForYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootballForYou/Pods-FootballForYou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,14 @@
 			name = Premier;
 			sourceTree = "<group>";
 		};
+		951ECA2E1EBE016E00C97E1D /* CustomViewUI */ = {
+			isa = PBXGroup;
+			children = (
+				95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */,
+			);
+			name = CustomViewUI;
+			sourceTree = "<group>";
+		};
 		959155E31EB7E9000017B83E = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,8 @@
 				959156051EB7EA5E0017B83E /* Controller */,
 				959156041EB7EA540017B83E /* Utilities */,
 				959156031EB7EA4A0017B83E /* Resources */,
+				959155F31EB7E9000017B83E /* Main.storyboard */,
+				959155F81EB7E9000017B83E /* LaunchScreen.storyboard */,
 			);
 			path = FootballForYou;
 			sourceTree = "<group>";
@@ -199,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				95633F4C1EB7F7FF003B3FF2 /* csv.swift */,
-				95CE72A11EB8E0F300B00BB3 /* iOSDevCenters+GIF.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -217,12 +228,11 @@
 		959156061EB7EA650017B83E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				959155F31EB7E9000017B83E /* Main.storyboard */,
-				959155F81EB7E9000017B83E /* LaunchScreen.storyboard */,
+				951ECA2E1EBE016E00C97E1D /* CustomViewUI */,
 				9591560A1EB7EE390017B83E /* Screen1CollectionView.swift */,
-				95633F4E1EB80189003B3FF2 /* shadedViewForCollectionView.swift */,
 				95633F551EB8232B003B3FF2 /* Screen2CollectionView.swift */,
-				9508154C1EB8E3180045E32F /* CustomizedImageView.swift */,
+				951ECA2F1EBE01AC00C97E1D /* Screen2TableViewCell.swift */,
+				958D505B1EBFA11900BEAC41 /* FixturesTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 			children = (
 				9591560C1EB7EF500017B83E /* Competitions.swift */,
 				95633F531EB81234003B3FF2 /* Teams.swift */,
+				958D505D1EBFA30000BEAC41 /* Fixtures.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -382,17 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951ECA301EBE01AC00C97E1D /* Screen2TableViewCell.swift in Sources */,
 				95633F561EB8232B003B3FF2 /* Screen2CollectionView.swift in Sources */,
-				95CE72A21EB8E0F300B00BB3 /* iOSDevCenters+GIF.swift in Sources */,
 				95633F541EB81234003B3FF2 /* Teams.swift in Sources */,
 				959155F21EB7E9000017B83E /* Screen1.swift in Sources */,
 				959155F01EB7E9000017B83E /* AppDelegate.swift in Sources */,
 				9591560B1EB7EE390017B83E /* Screen1CollectionView.swift in Sources */,
 				95633F511EB80E60003B3FF2 /* Screen2.swift in Sources */,
 				9591560D1EB7EF500017B83E /* Competitions.swift in Sources */,
-				9508154D1EB8E3180045E32F /* CustomizedImageView.swift in Sources */,
 				95633F4F1EB80189003B3FF2 /* shadedViewForCollectionView.swift in Sources */,
 				95633F4D1EB7F7FF003B3FF2 /* csv.swift in Sources */,
+				958D505C1EBFA11900BEAC41 /* FixturesTableViewCell.swift in Sources */,
+				958D505E1EBFA30000BEAC41 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

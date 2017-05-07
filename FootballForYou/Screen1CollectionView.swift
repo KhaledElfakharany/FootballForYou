@@ -11,10 +11,8 @@ import UIKit
 class Screen1CollectionView: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var label: UILabel!
     
     func updateUI(competition : Competitions){
         image.image = UIImage(named: competition.name)
-//        label.text = competition.name
     }
 }

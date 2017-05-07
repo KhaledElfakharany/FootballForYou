@@ -14,6 +14,7 @@ class Competitions {
     
     private var _name: String!
     private var _id: Int!
+    private var _matchDay : Int!
     
     var name : String {
         if _name == nil {
@@ -27,6 +28,17 @@ class Competitions {
             _id = 0
         }
         return _id
+    }
+    
+    var matchDay : Int {
+        get {
+            if _matchDay == nil {
+                _matchDay = 0
+            }
+            return _matchDay
+        } set {
+            _matchDay = newValue
+        }
     }
     
     init(name : String, id : Int) {
