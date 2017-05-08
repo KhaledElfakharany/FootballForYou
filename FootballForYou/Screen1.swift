@@ -21,7 +21,6 @@ class Screen1: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         collectionView.dataSource = self
         ParseCSV()
         downloadCompetitionDetails {
-            print("Completed")
         }
         
     }

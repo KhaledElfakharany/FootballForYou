@@ -17,6 +17,7 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
     var tableTeams = [Teams]()
     var fixtureTeams = [Fixtures]()
     var fixtureTeamsSorted = [Fixtures]()
+    var fixtureCheck = false
     
     @IBOutlet weak var teamsCollectionView: UICollectionView!
     @IBOutlet weak var teamsView: UIView!
@@ -33,32 +34,37 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
         table.delegate = self
         fixtures.dataSource = self
         fixtures.delegate = self
-        print(matchDay)
-
-
-        downloadTableData {
-            self.table.reloadData()
-            //            print("Array count = \(self.tableTeams.count)")
-            self.downloadFixturesData {
-                self.fixtures.reloadData()
-                //            print(self.fixtureTeams[379].homeTeamName)
-                self.downloadTeams {
-                    self.teamsCollectionView.reloadData()
-                    for x in 0...(self.tableTeams.count-1)*2{
-                    for item in self.fixtureTeams {
-                        if item.matchDay == x {
-                            self.fixtureTeamsSorted.append(item)
-                        }
-                    }
-                    }
-                }
-            }
-        }
+        
+        
+        
         
     }
     override func viewWillAppear(_ animated: Bool) {
         self.teamsView.isHidden = true
         self.fixtureView.isHidden = true
+        self.tableView.isHidden = false
+        self.segments.selectedSegmentIndex = 0
+        self.teamsCollectionView.reloadData()
+        downloadFixturesData {
+            for x in 0...(self.tableTeams.count-1)*2{
+                for item in self.fixtureTeams {
+                    if item.matchDay == x {
+                        self.fixtureTeamsSorted.append(item)
+                    }
+                }
+            }
+            self.fixtures.reloadData()
+            self.fixtureCheck = true
+            let indexPath = NSIndexPath(row: 0, section: self.matchDay-1)
+            self.fixtures.scrollToRow(at: indexPath as IndexPath, at: .top, animated: true)
+            
+        }
+        downloadTeams {
+            self.teamsCollectionView.reloadData()
+        }
+        downloadTableData {
+            self.table.reloadData()
+        }
     }
     
     func downloadFixturesData(completed: @escaping ()->()){
@@ -108,12 +114,15 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
             completed()
         }
     }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return teams.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Screen2CollectionView" , for: indexPath) as? Screen2CollectionView {
             let team = teams[indexPath.row]
@@ -122,23 +131,27 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
         }
         return UICollectionViewCell()
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 105, height: 125)
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if tableView == table {
             return 1
         }
         return ((teams.count-1)*2)
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == table{
-        return self.tableTeams.count
+            return self.tableTeams.count
         }
         else {
             return self.tableTeams.count/2
         }
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == table {
             if let cell = table.dequeueReusableCell(withIdentifier: "Screen2TableViewCell", for: indexPath) as? Screen2TableViewCell{
@@ -147,19 +160,36 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
             }
         }
         else if tableView == fixtures {
+            if fixtureCheck == true {
             if let cell = fixtures.dequeueReusableCell(withIdentifier: "FixturesTableViewCell", for: indexPath) as? FixturesTableViewCell{
                 let index = indexPath.row + indexPath.section*(tableTeams.count/2)
                 cell.configureCell(fixture: fixtureTeamsSorted[index])
                 return cell
             }
+            }
         }
         return UITableViewCell()
     }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView != table{
-            return "Section \(section+1)"
+            return "MatchDay \(section+1)"
         }
         return ""
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let team = teams[indexPath.row]
+        performSegue(withIdentifier: "teamSegue", sender: team )
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "teamSegue"{
+            if let distnation = segue.destination as? teamScreen {
+                if let sent = sender as? Teams {
+                    distnation.playersLink = sent.playersURL
+                    distnation.teamName = sent.name
+                }
+            }
+        }
     }
     
     @IBAction func segmentChange(_ sender: Any) {
@@ -168,15 +198,12 @@ class Screen2: UIViewController,UICollectionViewDelegate,UICollectionViewDelegat
             self.teamsView.isHidden = true
             self.fixtureView.isHidden = true
             self.table.reloadData()
-            
-            
         }else if segments.selectedSegmentIndex == 1{
             self.teamsView.isHidden = true
             self.tableView.isHidden = true
             self.fixtureView.isHidden = false
             self.fixtures.reloadData()
-            let indexPath = NSIndexPath(row: 0, section: matchDay-1)
-            self.fixtures.scrollToRow(at: indexPath as IndexPath, at: .top, animated: true)
+            
         }else if segments.selectedSegmentIndex == 2{
             self.tableView.isHidden = true
             self.teamsView.isHidden = false
